@@ -128,21 +128,21 @@ window.C = {
       program: { en: "Session 1 + the field research week.", ar: "السيشن 1 + أسبوع البحث الميداني." },
       story: { en: "Al-Baz Effendi leans in and says softly: \"صلاة النبي أحسن... the problem is obvious, teachers are boring. Just build a video platform and you're done.\" Don't take his offer. Go to people first.", ar: "الباز أفندي بيقرّب ويقول بهدوء: \"صلاة النبي أحسن... المشكلة واضحة، المدرسين مملين. اعملوا منصة فيديوهات وخلاص.\" متاخدوش عرضه. روحوا للناس الأول." },
       steps: [
-        ["Meet Al-Baz", "قابلوا الباز", 3, "Read the story together.", "اقروا القصة مع بعض."],
+        ["Read the story", "اقروا القصة", 3, "Read «The Seventh Period» together, out loud.", "اقروا «الحصة السابعة» مع بعض بصوت عالي."],
         ["Zone Map", "Zone Map", 5, "Each person draws a normal school day when they were a student: places, people, times. Put a red dot on every moment that felt like a problem.", "كل واحد يرسم يوم دراسي عادي لما كان طالب: الأماكن والناس والمواعيد. وحط نقطة حمرا على كل لحظة كانت مشكلة."],
         ["Validity Check", "Validity Check", 4, "Test \"teachers are boring\" with 5 questions: Real people affected? Can we reach them? Specific? A need, not a solution? Still a gap?", "اختبروا \"المدرسين مملين\" بـ 5 أسئلة: فيه ناس حقيقية متأثرة؟ نقدر نوصلهم؟ محددة؟ احتياج مش حل؟ لسه محدش حلها؟"],
         ["Pair interviews", "انترفيوز في أزواج", 8, "In pairs, interview each other about your own experience as a student in class. Open questions only (\"Tell me about a time...\"). Each person writes 3 quotes in the other person's exact words.", "في أزواج، اعملوا انترفيو مع بعض عن تجربتكم كطلاب في الفصل. أسئلة مفتوحة بس (\"احكيلي عن مرة...\"). كل واحد يكتب 3 جمل بكلام اللي قدامه بالظبط."]
       ],
       output: {
         en: ["At least 6 quotes on the team board.", "One challenge sentence: \"Our challenge is that [who] struggle with [what] because [why].\""],
-        ar: ["6 كوتيشنز على الأقل على بورد الفريق.", "جملة تحدي واحدة: \"التحدي بتاعنا إن [مين] بيعانوا من [إيه] عشان [ليه].\""]
+        ar: ["6 جمل على الأقل قالها حد، بكلامه بالظبط، على بورد الفريق.", "جملة تحدي واحدة: \"التحدي بتاعنا إن [مين] بيعانوا من [إيه] عشان [ليه].\""]
       },
       checklist: ["6+ quotes written in people's own words.", "The challenge sentence contains no solution (no \"app\", \"platform\", \"we will build\")."],
       tips: { en: "Your job here is to stop the team jumping to a solution. When someone says \"app\" or \"platform\", ask: \"What did the person you interviewed actually say?\"", ar: "شغلتك هنا إنك توقف الفريق عن القفز للحل. أول ما حد يقول \"أبلكيشن\" أو \"منصة\"، اسأل: \"اللي عملت معاه الانترفيو قال إيه بالظبط؟\"" },
       hint: { en: "Read your challenge sentence out loud. If it contains a verb like \"build\", \"make\" or \"create\", it's a solution, not a problem.", ar: "اقروا جملة التحدي بصوت عالي. لو فيها فعل زي \"نبني\" أو \"نعمل\" أو \"نطلع\"، يبقى دي حل مش مشكلة." },
       example: {
         en: ["Quote (good): \"I used to count the tiles on the ceiling during chemistry.\"", "Interpretation (not a quote): \"Chemistry is boring.\"", "Challenge sentence: \"Our challenge is that secondary students struggle to stay engaged in long theory lessons because the lesson is one-way explanation with no chance to try.\""],
-        ar: ["كوتيشن (كويس): \"كنت بعد البلاط اللي في السقف في حصة الكيميا.\"", "تفسير (مش كوتيشن): \"الكيميا مملة.\"", "جملة التحدي: \"التحدي بتاعنا إن طلاب ثانوي بيعانوا إنهم يفضلوا مركزين في الحصص النظري الطويلة عشان الحصة شرح من ناحية واحدة ومفيش فرصة يجربوا.\""]
+        ar: ["جملة قالها حد (كويس): \"كنت بعد البلاط اللي في السقف في حصة الكيميا.\"", "تفسير (مش كلام حد): \"الكيميا مملة.\"", "جملة التحدي: \"التحدي بتاعنا إن طلاب ثانوي بيعانوا إنهم يفضلوا مركزين في الحصص النظري الطويلة عشان الحصة شرح من ناحية واحدة ومفيش فرصة يجربوا.\""]
       }
     },
     {
@@ -154,19 +154,18 @@ window.C = {
       program: { en: "Session 2 (interview unpacking and Define).", ar: "السيشن 2 (آنباكينج الانترفيوز والـ Define)." },
       story: { en: "\"Among your evidence, 3 notes are not from real people. Ask them who they are, and they'll say: مش أنا مش أنا. Find them before they ruin your insights.\"", ar: "\"في وسط أدلتكم فيه 3 نوتس مش من ناس حقيقيين. اسألوهم إنتوا مين، هيقولولكم: مش أنا مش أنا. امسكوهم قبل ما يبوظوا الـ Insights بتاعتكم.\"" },
       steps: [
-        ["Meet El-Meligy", "قابلوا المليجي", 3, "Read the story together.", "اقروا القصة مع بعض."],
         ["Unpack in 6 boxes", "آنباكينج في 6 بوكسات", 6, "Move every note into one of 6 boxes: Quotes, Behaviours, Important Info, Pains, Needs, Surprises.", "حطوا كل نوتة في بوكس من 6: Quotes، Behaviours، Important Info، Pains، Needs، Surprises."],
         ["Hunt the planted notes", "اصطادوا النوتس المزروعة", 4, "For every note, ask: \"Who said this, exactly? In which interview?\" If nobody can answer, it's Meligy's.", "على كل نوتة اسألوا: \"مين قال ده بالظبط؟ في أنهي انترفيو؟\" ولو محدش عارف، يبقى بتاعة المليجي."],
-        ["3 insights", "3 Insights", 4, "Circle what repeats. Write 3 insights, each tied to a real quote.", "علّموا على اللي بيتكرر. اكتبوا 3 Insights، وكل واحدة مربوطة بكوتيشن حقيقي."],
+        ["3 insights", "3 Insights", 4, "Circle what repeats. Write 3 insights, each tied to a real quote.", "علّموا على اللي بيتكرر. اكتبوا 3 Insights، وكل واحدة مربوطة بجملة حقيقية قالها حد."],
         ["One HMW", "سؤال HMW واحد", 3, "Turn your strongest insight into one \"How might we...?\" question.", "حوّلوا أقوى Insight لسؤال واحد \"إزاي ممكن...؟\""]
       ],
-      output: { en: ["The 3 planted notes marked as caught.", "3 insights, each with its quote.", "One HMW question."], ar: ["الـ 3 نوتس المزروعة متعلّم عليهم إنهم اتمسكوا.", "3 Insights، كل واحدة معاها الكوتيشن بتاعها.", "سؤال HMW واحد."] },
+      output: { en: ["The 3 planted notes marked as caught.", "3 insights, each with its quote.", "One HMW question."], ar: ["الـ 3 نوتس المزروعة متعلّم عليهم إنهم اتمسكوا.", "3 Insights، كل واحدة معاها الجملة اللي قالها حد وطلعت منها.", "سؤال HMW واحد."] },
       checklist: ["All 3 planted notes caught.", "The HMW is tied to a real quote."],
       tips: { en: "Keep asking \"Who said this?\" Separate what people said from what we think it means. Don't accuse anyone; let the evidence do the work.", ar: "فضل اسأل \"مين قال ده؟\" افصل بين اللي الناس قالوه واللي إحنا فاكرين إنه معناه. متتهمش حد، خلي الأدلة هي اللي تتكلم." },
-      hint: { en: "Planted notes sound like conclusions (\"everyone knows\", \"students hate\", \"the problem is\"). Real quotes sound like a person telling a story.", ar: "النوتس المزروعة شكلها استنتاج (\"كلنا عارفين\"، \"الطلاب بيكرهوا\"، \"المشكلة في\"). الكوتيشن الحقيقي شكله واحد بيحكي حكاية." },
+      hint: { en: "Planted notes sound like conclusions (\"everyone knows\", \"students hate\", \"the problem is\"). Real quotes sound like a person telling a story.", ar: "النوتس المزروعة شكلها استنتاج (\"كلنا عارفين\"، \"الطلاب بيكرهوا\"، \"المشكلة في\"). الجملة الحقيقية شكلها واحد بيحكي حكاية." },
       example: {
         en: ["Quote: \"I always wait until the bell rings and go to the teacher alone.\"", "Insight: \"Students only feel safe asking questions away from their classmates.\"", "HMW: \"How might we make asking questions feel safe for secondary students in class, knowing that they fear looking stupid in front of peers?\""],
-        ar: ["كوتيشن: \"أنا دايماً بستنى الجرس يضرب وأروح للمدرس لوحدي.\"", "Insight: \"الطلاب مش بيحسوا بالأمان يسألوا غير بعيد عن زمايلهم.\"", "HMW: \"إزاي ممكن نخلي السؤال في الفصل آمن لطلاب ثانوي، مع إنهم خايفين يبانوا أغبيا قدام زمايلهم؟\""]
+        ar: ["جملة قالها حد: \"أنا دايماً بستنى الجرس يضرب وأروح للمدرس لوحدي.\"", "Insight: \"الطلاب مش بيحسوا بالأمان يسألوا غير بعيد عن زمايلهم.\"", "HMW: \"إزاي ممكن نخلي السؤال في الفصل آمن لطلاب ثانوي، مع إنهم خايفين يبانوا أغبيا قدام زمايلهم؟\""]
       }
     },
     {
@@ -178,7 +177,6 @@ window.C = {
       program: { en: "End of Session 2 (ideation) + Session 3 (filtering and selection).", ar: "آخر السيشن 2 (الآيديشن) + السيشن 3 (الفلترة والاختيار)." },
       story: { en: "Zaki Rostom laughs at every ordinary idea: \"مش قادر أصدق يا عالم!\" You won't beat him with the first idea that comes to mind. You need a trick.", ar: "زكي رستم بيضحك على أي فكرة عادية: \"مش قادر أصدق يا عالم!\" مش هتغلبوه بأول فكرة تيجي في دماغكم. محتاجين حيلة." },
       steps: [
-        ["Meet Zaki", "قابلوا زكي", 2, "Read the story together.", "اقروا القصة مع بعض."],
         ["Crazy 8s", "Crazy 8s", 4, "Each person sketches or writes 8 ideas, 30 seconds each. Quantity beats quality.", "كل واحد يرسم أو يكتب 8 أفكار، نص دقيقة لكل فكرة. الكمية أهم من الجودة."],
         ["Pass and Build", "Pass and Build", 4, "Pass ideas around. Each person adds a twist or improvement to someone else's idea.", "مرّروا الأفكار لبعض. كل واحد يزود إضافة أو تعديل على فكرة غيره."],
         ["D/F/V scoring", "تقييم D/F/V", 4, "Score your top 3 ideas 1–5 on Desirability (do people want it?), Feasibility (can we make it?), Viability (can it last as a business?). One evidence line per score.", "ادّوا لأحسن 3 أفكار درجة من 1 لـ 5 على: Desirability (الناس عايزاها؟)، Feasibility (نقدر نعملها؟)، Viability (تعيش كبيزنس؟). سطر دليل لكل درجة."],
@@ -272,4 +270,73 @@ window.C = {
       { en: "Now's your moment: say 'That's good enough, let's move on.'", ar: "دلوقتي وقتك: قول 'خلاص كده كويس، يلا نكمل.'" }
     ]
   }
+};
+
+// The challenge story — shown on the Journey screen and in Room 1 only.
+window.C.story = {
+  title: { ar: "الحصة السابعة", en: "The Seventh Period" },
+  ar: [
+    "الساعة 1:40 الضهر. الحصة السابعة، كيميا، فصل 2/3 ثانوي، وفيه 46 طالب.",
+    "الأستاذ مجدي كاتب على السبورة من أول الحصة، ومن ساعتها ضهره للفصل. بيشرح بصوت واحد مبيعلاش ومبيوطاش، وكل شوية يقول: \"ده هييجي في الامتحان.\"",
+    "ندى في التالت قاعدة جنب الشباك. فاهمة أول ربع ساعة كويس، وبعدين حاجة فاتتها ومعرفتش ترجع. نفسها تسأل، بس آخر مرة حد سأل، الفصل كله ضحك.",
+    "يوسف في الآخر فاتح الكتاب، وتحت الكتاب الموبايل.",
+    "وكريم بيبص للساعة كل دقيقتين، وبيحس إن العقرب مش بيتحرك.",
+    "الأستاذ مجدي نفسه مش مبسوط. وراه منهج لازم يخلص قبل الامتحان، و46 طالب، وست حصص قبل دي.",
+    "الجرس ضرب. الكل قام. ومحدش فاكر الحصة كانت عن إيه.",
+    "بكرة في نفس المعاد، نفس الحصة."
+  ],
+  en: [
+    "1:40 pm. Seventh period, chemistry, class 2/3 secondary, 46 students.",
+    "Mr. Magdy has been writing on the board since the lesson began, his back to the class the whole time. He explains in one flat voice that never rises or falls, and every so often says: \"This will come up in the exam.\"",
+    "Nada, in the third row, sits by the window. She understood the first fifteen minutes well, then something slipped past her and she couldn't catch up. She wants to ask, but the last time someone asked, the whole class laughed.",
+    "Youssef, at the back, has his book open, and his phone under the book.",
+    "Karim checks the clock every two minutes and feels the hand isn't moving.",
+    "Mr. Magdy isn't happy either. He has a curriculum to finish before the exam, 46 students, and six lessons before this one.",
+    "The bell rings. Everyone gets up. Nobody remembers what the lesson was about.",
+    "Tomorrow, same time, same lesson."
+  ],
+  challenge: {
+    ar: "التحدي بتاعكم: الحصة دي بتتكرر كل يوم في مدارس كتير. قبل ما تفكروا في أي حل، اعرفوا الأول: ندى وكريم ويوسف، وحتى الأستاذ مجدي، بيعيشوا الحصة دي إزاي بجد؟",
+    en: "Your challenge: this lesson repeats every day in many schools. Before you think of any solution, first find out how Nada, Karim, Youssef, and even Mr. Magdy really live this lesson."
+  }
+};
+
+// Full persona cards (shown only on the holder's My Card).
+window.C.cards = [null,
+  { who: { ar: "متحمس للتكنولوجيا، وشايف إن أي مشكلة ليها أبلكيشن.", en: "A tech enthusiast who believes every problem has an app." },
+    act: { ar: "في كل خطوة بتقترح أبلكيشن أو منصة، حتى قبل ما الفريق يفهم المشكلة.", en: "At every step you propose an app or platform, even before the team understands the problem." },
+    team: { ar: "بتتحمس وبتحاول تقنعهم بفكرتك، وبتشد النقاش ناحية الحل.", en: "You get excited, try to sell your idea, and pull the discussion towards the solution." },
+    when: { ar: "بقوة في الأوضة 1 والأوضة 3.", en: "Strongly in Rooms 1 and 3." },
+    calm: { ar: "لو المدرب رجّعك لكلام الناس، وسألك مثلاً \"مين قال كده؟\"، اقبل وارجع للمشكلة.", en: "If the coach brings you back to what people actually said (for example \"Who said that?\"), accept it and return to the problem." } },
+  { who: { ar: "واثق جداً في الـ AI، وبتعتبر ردوده حقائق.", en: "You trust AI completely and treat its answers as facts." },
+    act: { ar: "بتجيب إجابات الـ AI على إنها دليل، بدل ما تسمع من الناس.", en: "You bring AI answers as evidence instead of listening to people." },
+    team: { ar: "لما حد يقول رأي، بتقارنه باللي الـ AI قاله وبتصحّحه.", en: "When someone shares a view, you compare it to what the AI said and correct them." },
+    when: { ar: "الأوضة 1 والأوضة 2.", en: "Rooms 1 and 2." },
+    calm: { ar: "لو المدرب سألك \"ده كلام مين من اللي قابلناهم؟\"، اعترف إنه مش من الميدان.", en: "If the coach asks \"Which of the people we met said this?\", admit it isn't from the field." } },
+  { who: { ar: "عملت الانترفيوز بس مش مع الناس الصح.", en: "You did the interviews, but not with the right people." },
+    act: { ar: "كل الانترفيوز بتاعتك مع قرايبك، وأسئلتك مقفولة جوابها آه أو لأ.", en: "All your interviews were with relatives, and your questions are closed: yes or no." },
+    team: { ar: "بتشارك اللي سمعته بثقة، كأنه يمثل كل الطلاب.", en: "You share what you heard confidently, as if it represents all students." },
+    when: { ar: "الأوضة 1.", en: "Room 1." },
+    calm: { ar: "لو المدرب سألك اتكلمت مع مين وسألت إيه، وساعدك تفتح السؤال، جرّب سؤال مفتوح.", en: "If the coach asks who you spoke to and what you asked, and helps you open the question, try an open question." } },
+  { who: { ar: "عندك أفكار، بس مش بتبادر.", en: "You have ideas, but you never volunteer them." },
+    act: { ar: "مش بتتكلم غير لو حد ناداك باسمك.", en: "You only speak when someone calls you by name." },
+    team: { ar: "بتسمع وبتهز راسك، لكن مش بتشارك من نفسك.", en: "You listen and nod, but never contribute on your own." },
+    when: { ar: "في كل الأوض.", en: "All rooms." },
+    calm: { ar: "لو المدرب ناداك باسمك وسألك سؤال مباشر، رد بفكرة حقيقية ومفيدة.", en: "If the coach calls your name and asks you directly, answer with a real, useful idea." } },
+  { who: { ar: "بتحب فكرتك، وبتاخد أي ملاحظة عليها بشكل شخصي.", en: "You love your idea and take any comment on it personally." },
+    act: { ar: "على أي فيدباك بترد وتبرر بدل ما تسمع.", en: "You answer every piece of feedback by justifying instead of listening." },
+    team: { ar: "بتدافع عن الفكرة وبتشرح، خصوصاً قدام التستر.", en: "You defend and explain the idea, especially in front of the tester." },
+    when: { ar: "الأوضة 4.", en: "Room 4." },
+    calm: { ar: "لو المدرب وقّفك بهدوء وقالك \"خلينا نشوف هو هيعمل إيه\"، اسكت وراقب.", en: "If the coach calmly stops you with \"Let's see what they do\", go quiet and watch." } },
+  { who: { ar: "عايز تخلّص بسرعة وتنتقل للي بعده.", en: "You want to finish fast and move on." },
+    act: { ar: "أول ما يطلع أي حاجة مقبولة بتقول \"خلاص كده كويس\".", en: "As soon as anything acceptable appears, you say \"That's good enough.\"" },
+    team: { ar: "بتزق الفريق يقفل الخطوة قبل ما تكمل.", en: "You push the team to close the step before it is done." },
+    when: { ar: "الأوضة 3 والأوضة 5.", en: "Rooms 3 and 5." },
+    calm: { ar: "لو المدرب رجّعكم للتشيك ليست أو للأرقام، استنى وكمّل معاهم.", en: "If the coach takes you back to the checklist or the numbers, wait and continue with them." } }
+];
+window.C.cardLabels = {
+  who: { ar: "إنت مين", en: "Who you are" }, act: { ar: "بتتصرف إزاي", en: "How you behave" },
+  team: { ar: "إزاي تتعامل مع فريقك", en: "With your team" }, when: { ar: "امتى تطلّعها", en: "When to bring it out" },
+  calm: { ar: "امتى تهدى", en: "When to ease off" },
+  rule: { ar: "شخصيتك سرية، متكشفهاش. وفي الأوضة اللي إنت فيها المدرب، سيب شخصيتك خالص.", en: "Your persona is secret: don't reveal it. In the room where you are the coach, drop your persona completely." }
 };
