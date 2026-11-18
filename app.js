@@ -193,9 +193,14 @@ function journey() {
   }).join("");
   return `<div class="paper"><h1>${U("title")}</h1><p style="font-size:18px">${esc(t(C.intro))}</p></div>
   <div class="road">${st}</div>
-  <div class="paper dark" style="margin-top:16px"><h2>${esc(t(C.challengeLine))}</h2></div>
+  <div style="margin-top:16px"></div>${storyHtml()}
   <div class="paper"><h2>${U("rulesH")}</h2><ol class="rules">${C.rules[lang].map(x => `<li>${esc(x)}</li>`).join("")}</ol></div>
   ${hasTeam && ts.status === "escaped" ? `<div class="paper dark" style="text-align:center"><h1 style="color:var(--mus)">${U("escaped")}</h1></div>` : ""}`;
+}
+function storyHtml() {
+  const St = C.story;
+  return `<div class="paper dark"><h2>${esc(t(St.title))}</h2>${St[lang].map(x => `<p style="font-size:18px">${esc(x)}</p>`).join("")}
+  <p class="card-reveal" style="color:var(--ink);font-size:18px;font-weight:800">${esc(t(St.challenge))}</p></div>`;
 }
 function missionFor(id) {
   // returns list of missions visible to this person now
@@ -224,9 +229,10 @@ function myCard() {
   if (TEAMS.includes(T)) {
     const pr = C.personas[p.persona];
     const coachRooms = ROOMS.filter(r => coachOf(T, r) === me);
+    const cd = C.cards[p.persona], L = C.cardLabels;
     h += pr ? `<div class="pcard"><div class="muted" style="color:var(--cream)">${U("persona")}</div><div class="pn">${esc(t(pr))}</div>
-      <p style="font-size:18px;margin-top:10px"><b>${U("behaviour")}:</b> ${esc(lang === "ar" ? pr.bar : pr.ben)}</p>
-      <p><b>${U("when")}:</b> ${esc(lang === "ar" ? pr.war : pr.wen)}</p>
+      <div style="text-align:start;margin-top:14px">${["who", "act", "team", "when", "calm"].map(k => `<p style="font-size:17px"><b style="color:var(--mus)">${esc(t(L[k]))}:</b> ${esc(t(cd[k]))}</p>`).join("")}</div>
+      <p class="card-reveal" style="color:var(--ink)">${esc(t(L.rule))}</p>
       ${coachRooms.map(r => `<p class="card-reveal" style="color:var(--ink)">${esc(C.coachNote[lang](r))}</p>`).join("")}</div>`
       : `<div class="paper"><p>${U("persona")}: —</p></div>`;
     h += `<div class="paper" style="margin-top:16px"><h2>${U("coachSchedule")}</h2><table class="sched">${ROOMS.map(r => {
@@ -271,12 +277,11 @@ function roomScreen(r) {
   const coachName = (P(coachOf(T, r)) || {}).name;
   const cleared = (ts.unlocked || {})[r + 1] || (r === 5 && ts.status === "escaped");
   return `<div class="paper" style="padding:10px">${boardLink(T)}</div>
-  <div class="paper"><div class="vhead">${poster(r)}<div><span class="tag">${U("room")} ${r} · ${esc(t(R.stage))}</span>
-   <h1 style="margin-top:6px">${esc(t(R.boss))}</h1><div class="muted">${esc(t(R.film))}</div>${vline(r)}
+  <div class="paper"><div class="vhead">${poster(r)}<div>${vline(r)}
    <div style="margin-top:8px">${ts.currentRoom === r ? timerHtml(T) : ""}</div>
    ${coachName ? `<p style="margin-top:8px">${isCoach ? `<span class="tag">★ ${U("youAreCoach")}</span>` : `<b>${U("coachIs")}:</b> ${esc(coachName)}`}</p>` : ""}</div></div>
-   <p class="card-reveal"><b>${U("meaning")}:</b> ${esc(t(R.meaning))}<br><span class="muted">${U("programLink")}: ${esc(t(R.program))}</span></p></div>
-  <div class="paper dark"><h2>${U("story")}</h2><p style="font-size:18px">${esc(t(R.story))}</p></div>
+</div>
+  ${r === 1 ? storyHtml() : ""}
   <div class="paper"><h2>${U("steps")}</h2><ol class="steps">${R.steps.map(s => `<li><div class="mn">${s[2]}<small>${U("min")}</small></div><div><b>${esc(lang === "ar" ? s[1] : s[0])}</b>${esc(lang === "ar" ? s[4] : s[3])}</div></li>`).join("")}</ol>
    ${R.rule ? `<p class="card-reveal"><b>${U("rule")}:</b> ${esc(t(R.rule))}</p>` : ""}${R.win ? `<p class="card-reveal"><b>${U("win")}:</b> ${esc(t(R.win))}</p>` : ""}</div>
   <div class="paper"><h2>${U("output")}</h2><ul class="out">${R.output[lang].map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>
